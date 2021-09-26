@@ -14,11 +14,15 @@ from typing import Dict, List
 
 from gi.repository import Gdk, Gtk, Pango
 
-banner = f"""\
+from gaphor.i18n import gettext
+
+banner = gettext(
+    """\
 Gaphor Interactive Python Console
-{sys.version}
+{version}
 Type "help" for more information.
 """
+).format(version=sys.version)
 
 
 def docstring_dedent(docstr: str) -> str:

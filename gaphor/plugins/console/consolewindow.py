@@ -7,6 +7,7 @@ from gi.repository import Gdk, Gtk
 
 from gaphor.abc import ActionProvider
 from gaphor.action import action
+from gaphor.i18n import gettext
 from gaphor.plugins.console.console import GTKInterpreterConsole
 from gaphor.services.properties import get_config_dir
 from gaphor.ui.abc import UIComponent
@@ -16,7 +17,7 @@ log = logging.getLogger(__name__)
 
 class ConsoleWindow(UIComponent, ActionProvider):
 
-    title = "Gaphor Console"
+    title = gettext("Gaphor Console")
     size = (400, 400)
 
     def __init__(self, component_registry, main_window, tools_menu):
@@ -39,7 +40,7 @@ class ConsoleWindow(UIComponent, ActionProvider):
         except OSError:
             log.info(f"No initiation script {console_py}")
 
-    @action(name="console-window-open", label="_Console")
+    @action(name="console-window-open", label=gettext("Console"))
     def open_console(self):
         if not self.window:
             self.open()

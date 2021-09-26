@@ -49,7 +49,7 @@
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <property name="margin-start">6</property>
-                    <property name="label" translatable="yes">Here goes a short informative message.</property>
+                    <property name="label">Here goes a short informative message.</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
