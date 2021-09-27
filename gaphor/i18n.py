@@ -7,8 +7,11 @@ __all__ = ["gettext"]
 import importlib.resources
 import locale
 import logging
+from typing import Callable
 
 log = logging.getLogger(__name__)
+
+gettext: Callable[[str], str]
 
 try:
     with importlib.resources.path("gaphor", "__init__.py") as path:

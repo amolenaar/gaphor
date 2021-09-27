@@ -990,7 +990,7 @@ msgstr ""
 
 #: gaphor/services/helpservice/about.ui:9
 msgid "Gaphor is the simple modeling tool written in Python"
-msgstr ""
+msgstr "Gaphor is een eenvoudig te gebruiken modeleertool geschreven in Python"
 
 #: gaphor/services/helpservice/about.ui:11
 msgid "Fork me on GitHub"
