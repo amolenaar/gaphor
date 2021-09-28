@@ -1129,7 +1129,7 @@ msgstr ""
 
 #: gaphor/ui/elementeditor.glade:15 gaphor/ui/elementeditor.ui:10
 msgid "No item selected"
-msgstr ""
+msgstr "Geen element geselecteerd"
 
 #: gaphor/ui/elementeditor.glade:36 gaphor/ui/elementeditor.ui:22
 msgid "Show Tips"
