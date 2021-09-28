@@ -53,5 +53,5 @@ else:
         locale.setlocale(locale.LC_ALL, "")
         locale.bindtextdomain("gaphor", localedir)  # type: ignore[attr-defined]
         locale.textdomain("gaphor")  # type: ignore[attr-defined]
-        locale.bind_textdomain_codeset("gaphor", "UTF-8")
+        locale.bind_textdomain_codeset("gaphor", "UTF-8")  # type: ignore[attr-defined]
         gettext = locale.gettext  # type: ignore[attr-defined]
